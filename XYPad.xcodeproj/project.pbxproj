@@ -3,27 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		C102D7772695205500DA0E47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102D7762695205500DA0E47 /* AppDelegate.swift */; };
-		C102D7792695205500DA0E47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102D7782695205500DA0E47 /* SceneDelegate.swift */; };
 		C102D77B2695205500DA0E47 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102D77A2695205500DA0E47 /* ViewController.swift */; };
 		C102D77E2695205500DA0E47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C102D77C2695205500DA0E47 /* Main.storyboard */; };
 		C102D7802695205600DA0E47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C102D77F2695205600DA0E47 /* Assets.xcassets */; };
 		C102D7832695205600DA0E47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C102D7812695205600DA0E47 /* LaunchScreen.storyboard */; };
+		C102D790269520C400DA0E47 /* XYPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C102D78C269520C400DA0E47 /* XYPad.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C102D7732695205500DA0E47 /* XYPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C102D7762695205500DA0E47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C102D7782695205500DA0E47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C102D77A2695205500DA0E47 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C102D77D2695205500DA0E47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C102D77F2695205600DA0E47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C102D7822695205600DA0E47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C102D7842695205600DA0E47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C102D78C269520C400DA0E47 /* XYPad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYPad.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				C102D7762695205500DA0E47 /* AppDelegate.swift */,
-				C102D7782695205500DA0E47 /* SceneDelegate.swift */,
 				C102D77A2695205500DA0E47 /* ViewController.swift */,
+				C102D78A269520C400DA0E47 /* Sources */,
+				C102D78D269520C400DA0E47 /* Tests */,
 				C102D77C2695205500DA0E47 /* Main.storyboard */,
 				C102D77F2695205600DA0E47 /* Assets.xcassets */,
 				C102D7812695205600DA0E47 /* LaunchScreen.storyboard */,
 				C102D7842695205600DA0E47 /* Info.plist */,
 			);
 			path = XYPad;
+			sourceTree = "<group>";
+		};
+		C102D78A269520C400DA0E47 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C102D78B269520C400DA0E47 /* XYPad */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		C102D78B269520C400DA0E47 /* XYPad */ = {
+			isa = PBXGroup;
+			children = (
+				C102D78C269520C400DA0E47 /* XYPad.swift */,
+			);
+			path = XYPad;
+			sourceTree = "<group>";
+		};
+		C102D78D269520C400DA0E47 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C102D78E269520C400DA0E47 /* XYPadTests */,
+			);
+			path = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		C102D78E269520C400DA0E47 /* XYPadTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XYPadTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +135,7 @@
 				};
 			};
 			buildConfigurationList = C102D76E2695205500DA0E47 /* Build configuration list for PBXProject "XYPad" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,9 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C102D790269520C400DA0E47 /* XYPad.swift in Sources */,
 				C102D77B2695205500DA0E47 /* ViewController.swift in Sources */,
 				C102D7772695205500DA0E47 /* AppDelegate.swift in Sources */,
-				C102D7792695205500DA0E47 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +329,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,6 +358,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
