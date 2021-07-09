@@ -37,3 +37,4 @@ override func viewDidLoad() {
 * You can set `minXValue` and `maxXValue` 
 * You can set `minYValue` and `maxYValue` 
 * for the x-y value ranges.
+* Set `resetsToCenter` property to true if you want to the xy-pad resets its value to the center after the user lifts off their finger.
