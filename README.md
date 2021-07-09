@@ -32,7 +32,7 @@ override func viewDidLoad() {
 }
 ```
 
-* You can set adjust the `indicatorSize`, `indicatorView`, `xLabel`, `yLabel`, `xLine` and `yLine` values after the initialization.
+* You can adjust the `indicatorSize`, `indicatorView`, `xLabel`, `yLabel`, `xLine` and `yLine` values after the initialization.
 
 * You can set `minXValue` and `maxXValue` 
 * You can set `minYValue` and `maxYValue` 
